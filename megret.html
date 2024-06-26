@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Ophtao -</title>
+    <link rel="icon" href="image.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="image.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .content {
+            text-align: center;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        #megret {
+            background-image: url('megret.jpg'); /* Modifier le nom de l'image ici */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>- Dr. Olivier Megret -</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Page d'accueil</a></li> <!-- Modifier le lien si nécessaire -->
+            </ul>
+        </nav>
+    </header>
+
+    <div id="megret" class="section">
+        <div class="content">
+            <p>Informations concernant le Dr Megret</p> <!-- Modifier le contenu ici -->
+        </div>
+    </div>
+
+    <!-- Scripts ou autres contenus supplémentaires si nécessaire -->
+
+</body>
+
+</html>

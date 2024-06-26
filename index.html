@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Ophtao -</title>
+    <link rel="icon" href="image.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="image.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Style par défaut pour les écrans larges */
+        .section {
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Style pour les écrans de taille maximale 768px (téléphones et tablettes) */
+        @media (max-width: 768px) {
+            .section {
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .content {
+            text-align: center;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: absolute;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .btn-tel {
+            bottom: 30vh;
+            left: 10vh;
+        }
+
+        .btn-mail {
+            bottom: 22vh;
+            left: 10vh;
+        }
+
+        .btn-rdv {
+            bottom: 15vh;
+            left: 10vh;
+        }
+
+        .btn-maps {
+            bottom: 52vh;
+            left: 10vh;
+        }
+
+        .btn-megret {
+        bottom: 45vh;
+        left: 30vh;
+        }
+
+        .btn-lassoued {
+            bottom: 45vh;
+            left: 65vh;
+        }
+
+        .btn-hoegy {
+            bottom: 45vh;
+            left: 102vh;
+        }
+
+        .btn-kerdali {
+            bottom: 45vh;
+            left: 144vh;
+        }
+
+        .btn-thay {
+            bottom: 20vh;
+            left: 65vh;
+        }
+
+        .btn-feret {
+            bottom: 20vh;
+            left: 30vh;
+        }
+
+        .btn-saudemont {
+            bottom: 20vh;
+            left: 102vh;
+        }
+
+        .btn-geneve {
+            bottom: 20vh;
+            left: 144vh;
+        }
+
+        .btn-consultation {
+            bottom: 45vh;
+            left: 20vh;
+        }
+
+        .btn-pediatrie {
+            bottom: 45vh;
+            left: 93vh;
+        }
+
+        .btn-contrôle {
+            bottom: 45vh;
+            left: 152vh;
+        }
+
+        .btn-diabetique {
+            bottom: 16vh;
+            left: 24vh;
+        }
+
+        .btn-lentilles {
+            bottom: 16vh;
+            left: 93vh;
+        }
+
+        .btn-urgences {
+            bottom: 16vh;
+            left: 158vh;
+        }
+
+        .btn-glaucome {
+            bottom: 2vh;
+            left: 50vh;
+        }
+
+        .btn-dmla {
+            bottom: 2vh;
+            left: 125vh;
+        }
+
+        .btn-retinopathie {
+            bottom: 30vh;
+            left: 35vh;
+        }
+
+        .btn-cataracte {
+            bottom: 30vh;
+            left: 148vh;
+        }
+
+        .btn-uveite {
+            bottom: 30vh;
+            left: 50vh;
+        }
+
+        .btn-dystrophies {
+            bottom: 30vh;
+            left: 137vh;
+        }
+
+        .btn-myopie {
+            bottom: 35vh;
+            left: 27vh;
+        }
+
+        .btn-hypermetropie {
+            bottom: 35vh;
+            left: 70vh;
+        }
+
+        .btn-astigmatisme {
+            bottom: 35vh;
+            left: 115vh;
+        }
+
+        .btn-presbytie {
+            bottom: 35vh;
+            left: 157vh;
+        }
+
+        #index {
+            background-image: url('Index.jpg');
+        }
+
+        #bienvenue {
+            background-image: url('Bienvenue.jpg');
+        }
+
+        #cabinet {
+            background-image: url('Cabinet.jpg');
+        }
+
+        #equipe {
+            background-image: url('equipe.jpg');
+        }
+
+        #consultation {
+            background-image: url('consultation.jpg');
+        }
+
+        #pathologies {
+            background-image: url('pathologies.png');
+        }
+
+        #pathologies_V2 {
+            background-image: url('pathologie_V2.jpg');
+        }
+
+        #pathologies_V3 {
+            background-image: url('pathologie_V3.jpg');
+        }
+
+        #correction {
+            background-image: url('correction.jpg');
+        }
+
+        #visuels {
+            background-image: url('plateau.jpg');
+        }
+
+        #plateau_V2 {
+            background-image: url('plateau_V2.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>- Ophtao -</h1>
+        <nav>
+            <ul>
+                <li><a href="#cabinet">Le cabinet</a></li>
+                <li><a href="#equipe">L'équipe médicale</a></li>
+                <li><a href="#consultation">Consultations</a></li>
+                <li><a href="#pathologies">Pathologies</a></li>
+                <li><a href="#correction">Correction des défauts visuels</a></li>
+                <li><a href="#visuels">Plateau technique</a></li>
+                <li><a href="Fiches_SFO.html">Fiches d'informations patients SFO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="index" class="section">
+        <div class="content">
+        </div>
+    </div>
+
+    <div id="bienvenue" class="section">
+        <div class="content">
+        </div>
+    </div>
+
+    <div id="cabinet" class="section">
+        <div class="content">
+        </div>
+        <a href="tel:0139139191" class="btn btn-tel">01 39 13 91 91</a>
+        <a href="mailto:oph.hochemarceau@orange.fr" class="btn btn-mail">oph.hochemarceau@orange.fr</a>
+        <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile" target="_blank" class="btn btn-rdv">Prendre rendez-vous en ligne</a>
+        <a href="https://www.google.com/maps/dir//60+Rue+Hoche,+78800+Houilles/@48.9252008,2.1823801,17z/data=!4m18!1m8!3m7!1s0x47e663f16541f7af:0xccff01f48236319d!2s60+Rue+Hoche,+78800+Houilles!3b1!8m2!3d48.9251973!4d2.184955!16s%2Fg%2F11csfq9b13!4m8!1m0!1m5!1m1!1s0x47e663f16541f7af:0xccff01f48236319d!2m2!1d2.184955!2d48.9251973!3e3?entry=ttu" target="_blank" class="btn btn-maps">Google Maps</a>
+    </div>
+
+    <div id="equipe" class="section">
+    <div class="content">
+    </div>
+    <a href="megret.html" class="btn btn-megret">Dr. Olivier Megret</a>
+    <a href="#" class="btn btn-lassoued">Dr. Ben Lassoued</a>
+    <a href="#" class="btn btn-hoegy">Dr. Jean-Charles Hoegy</a>
+    <a href="#" class="btn btn-kerdali">Dr. Nawel Kerdali</a>
+    <a href="#" class="btn btn-thay">Mme. Nathalie Thay</a>
+    <a href="#" class="btn btn-feret">M. Pierre Henri Feret</a>
+    <a href="#" class="btn btn-saudemont">Mme. Carole Saudemont</a>
+    <a href="#" class="btn btn-geneve">Mme. Nadege Genève</a>
+</div>
+
+    <div id="consultation" class="section">
+    <div class="content">
+    </div>
+    <a href="#" class="btn btn-consultation">Consultation médicale</a>
+    <a href="#" class="btn btn-pediatrie">Pédiatrie</a>
+    <a href="#" class="btn btn-contrôle">Rendez-vous de contrôle</a>
+    <a href="#" class="btn btn-diabetique">Diabétique</a>
+    <a href="#" class="btn btn-lentilles">Lentilles</a>
+    <a href="#" class="btn btn-urgences">Urgences</a>
+</div>
+
+    <div id="pathologies" class="section">
+    <div class="content">
+    </div>
+    <a href="#" class="btn btn-glaucome">Glaucome</a>
+    <a href="#" class="btn btn-dmla">Dégénérescence Maculaire Liée à l'Age</a>
+</div>
+
+    <div id="pathologies_V2" class="section">
+    <div class="content">
+    </div>
+    <a href="#" class="btn btn-retinopathie">Rétinopathie Diabétique</a>
+    <a href="#" class="btn btn-cataracte">Cataracte</a>
+</div>
+
+    <div id="pathologies_V3" class="section">
+    <div class="content">
+    </div>
+    <a href="#" class="btn btn-uveite">Uvéite</a>
+    <a href="#" class="btn btn-dystrophies">Dystrophies héréditaires de la rétine</a>
+</div>
+
+    <div id="correction" class="section">
+    <div class="content">
+    </div>
+    <a href="myopie.html" class="btn btn-myopie">Myopie</a>
+    <a href="#" class="btn btn-hypermetropie">Hypermétropie</a>
+    <a href="#" class="btn btn-astigmatisme">Astigmatisme</a>
+    <a href="#" class="btn btn-presbytie">Presbytie</a>
+</div>
+
+    <div id="visuels" class="section">
+        <div class="content">
+        </div>
+    </div>
+
+    <div id="plateau_V2" class="section">
+        <div class="content">
+        </div>
+    </div>
+</body>
+
+</html>

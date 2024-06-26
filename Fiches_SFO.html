@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ophtao</title>
+    <link rel="icon" href="image.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="image.ico" type="image/x-icon">
+    <title>Cabinet Médical d'Ophtalmologie</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ophtao</title>
+    <title>Cabinet Médical d'Ophtalmologie</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        article {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        article h2 {
+            color: #003366;
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ophtao - Fiches d'informations patients</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="https://www.sfo-online.fr/patients/fiches-dinformations-patients" target="_blank">SFO - Société Française d'Ophtalmologie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+<article>
+    <h2>Angiographie en fluorescence (Fluoresceine)</h2>
+    <p><span id="angiographie_info" style="display:none;">L'angiographie en fluorescence, utilisant des colorants comme la fluorescéine ou le vert d'indocyanine, consiste à prendre des photos du fond de l'œil pour évaluer l'état des vaisseaux rétiniens. Cet examen peut aider au diagnostic et à la gestion de certaines maladies oculaires. Il est généralement réalisé en externe, mais nécessite la dilatation des pupilles et peut entraîner des effets indésirables temporaires tels que des nausées ou des réactions cutanées. Avant l'examen, un questionnaire est rempli pour évaluer les risques d'intolérance ou d'allergie. Malgré les précautions, des complications graves peuvent survenir, donc il est recommandé de rester sous surveillance après l'examen. Les femmes enceintes peuvent généralement subir cet examen, bien qu'il soit déconseillé pendant les premiers mois de grossesse, et l'allaitement doit être interrompu pendant quelques jours après l'examen. Avant de donner votre accord pour l'examen, il est important de discuter des risques et des avantages avec votre ophtalmologiste.</span></p>
+    <p id="angiographie_link"><a href="#" onclick="toggleText('angiographie_info', 'angiographie_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/62_Angiographie_en_fluorescence.pdf'); return false;">En savoir plus</a></p>
+</article>
+
+<article>
+    <h2>Cataracte</h2>
+    <p id="cataracte_info" style="display:none;">L'opération de la cataracte est une intervention chirurgicale majeure visant à extraire le cristallin opacifié de l'œil et à le remplacer par une lentille synthétique. Elle est réalisée en milieu chirurgical stérile sous anesthésie locale ou générale. Les complications peropératoires sont rares mais peuvent inclure une rupture de la capsule, une hémorragie ou une opacification incomplète. Après l'opération, la récupération visuelle est généralement rapide, bien que des soins locaux et une période de repos soient nécessaires. Les complications postopératoires sont également rares mais peuvent inclure des infections, des décollements de rétine ou des troubles de la cornée. Le consentement éclairé du patient est requis avant l'intervention, et toutes les informations sur les risques et les résultats attendus lui sont fournies.</p>
+    <p id="cataracte_link"><a href="#" onclick="toggleText('cataracte_info', 'cataracte_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/01A_Operation_de_la_cataracte.pdf'); return false;">En savoir plus</a></p>
+</article>
+
+<article>
+    <h2>Cataracte secondaire</h2>
+    <p id="cataracte_secondaire_info" style="display:none;">La cataracte secondaire, caractérisée par l'opacification de la capsule du cristallin après une chirurgie de la cataracte, peut être traitée efficacement par une capsulotomie au laser. Cette intervention, généralement réalisée en ambulatoire sous anesthésie locale, est peu douloureuse et nécessite souvent une seule séance. Les complications sont rares, mais peuvent inclure une inflammation modérée, une élévation temporaire de la pression intra-oculaire et des complications rétiniennes, comme un œdème rétinien central. La récupération visuelle est rapide et les soins postopératoires consistent principalement en l'instillation de gouttes.
+Complications potentielles de la capsulotomie au laser pour la cataracte secondaire : décollement de rétine, déplacement rare de l'implant cristallin, récidive rare de l'opacification capsulaire nécessitant une réintervention, et risque peu fréquent d'infection oculaire.</p>
+    <p id="cataracte_secondaire_link"><a href="#" onclick="toggleText('cataracte_secondaire_info', 'cataracte_secondaire_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/01A_Operation_de_la_cataracte.pdf'); return false;">En savoir plus</a></p>
+</article>
+
+<article>
+    <h2>Chirurgie des anomalies des paupières liées à l'âge</h2>
+    <p id="chirurgie_paupieres_fiche_info" style="display:none;">Si vous souffrez de troubles oculaires causés par des anomalies des paupières liées à l'âge, votre ophtalmologiste peut recommander une chirurgie pour améliorer votre condition. Ces anomalies incluent le relâchement de la peau des paupières supérieures, les poches palpébrales, l'ectropion, l'entropion, le ptosis du sourcil, etc. La chirurgie est généralement réalisée sous anesthésie locale et peut impliquer différentes techniques selon le type d'anomalie. Les complications possibles comprennent l'oedème, l'hématome, l'ectropion, l'entropion, entre autres. Votre ophtalmologiste est disponible pour répondre à vos questions, et il est important de discuter des risques et avantages avant de donner votre consentement pour l'opération.</p>
+    <p id="chirurgie_paupieres_fiche_info_link"><a href="#" onclick="toggleText('chirurgie_paupieres_fiche_info', 'chirurgie_paupieres_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/29_Chirurgie_des_anomalies_des_paupieres_liees_a_l_age.pdf'); return false;">En savoir plus</a></p>
+</article>
+
+<article>
+    <h2>Chirurgie réfractive cornéenne au laser</h2>
+    <p id="chirurgie_refractive_fiche_info" style="display:none;">Si vous présentez une anomalie de la réfraction telle que la myopie, l'hypermétropie, l'astigmatisme ou la presbytie, la chirurgie réfractive au laser peut être une option de traitement. Cette intervention vise à modifier la forme de la cornée pour corriger les défauts visuels. Selon la technique utilisée, l'opération peut être pratiquée en ambulatoire sous anesthésie locale. Les résultats varient en fonction de la méthode chirurgicale, mais généralement la récupération visuelle est rapide. Cependant, des complications telles que des infections, des cicatrisations anormales ou des déformations de la cornée peuvent survenir, bien que rarement. Il est essentiel de discuter des risques et des avantages avec votre ophtalmologiste avant de donner votre consentement pour l'intervention.</p>
+    <p id="chirurgie_refractive_fiche_info_link"><a href="#" onclick="toggleText('chirurgie_refractive_fiche_info', 'chirurgie_refractive_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/09A_Chirurgie_refractive_au_laser_v2.pdf'); return false;">En savoir plus</a></p>
+</article>
+
+    <article>
+    <h2>Corps Flottants</h2>
+    <p id="corpsflottants_fiche_info" style="display:none;">Si vous présentez une anomalie de la réfraction telle que la myopie, l'hypermétropie, l'astigmatisme ou la presbytie, la chirurgie réfractive au laser peut être une option de traitement. Cette intervention vise à modifier la forme de la cornée pour corriger les défauts visuels. Selon la technique utilisée, l'opération peut être pratiquée en ambulatoire sous anesthésie locale. Les résultats varient en fonction de la méthode chirurgicale, mais généralement la récupération visuelle est rapide. Cependant, des complications telles que des infections, des cicatrisations anormales ou des déformations de la cornée peuvent survenir, bien que rarement. Il est essentiel de discuter des risques et des avantages avec votre ophtalmologiste avant de donner votre consentement pour l'intervention.</p>
+        <p id="corpsflottants_fiche_info_link"><a href="#" onclick="toggleText('corpsflottants_fiche_info', 'corpsflottants_fiche_info_link', 'https://www.sfo-online.fr/patients/fiches-dinformations-patients'); return false;">En savoir plus</a></p>
+</article>
+
+</article>
+
+<article>
+    <h2>Examen de la réfraction chez l'enfant</h2>
+    <p id="examen_refraction_enfant_fiche_info" style="display:none;">Si votre enfant présente des problèmes de vision, votre ophtalmologiste peut recommander un examen de réfraction. Cet examen vise à détecter des anomalies telles que la myopie, l'hypermétropie ou l'astigmatisme. Pour les enfants, l'examen doit être objectif et nécessite une dilatation de la pupille avec des gouttes dans les yeux. Différents tests peuvent être utilisés en fonction de l'âge de l'enfant. Les effets secondaires des gouttes utilisées pour dilater la pupille peuvent inclure une sensibilité à la lumière, des difficultés de lecture et une rougeur des yeux. Dans certains cas, une correction optique par lunettes peut être nécessaire. Les verres et montures en plastique incassable sont souvent prescrits pour les enfants. Votre ophtalmologiste est disponible pour répondre à vos questions, et il est important de discuter des risques et avantages avant de donner votre consentement pour l'examen.</p>
+        <p id="examen_refraction_enfant_fiche_info_link"><a href="#" onclick="toggleText('examen_refraction_enfant_fiche_info', 'examen_refraction_enfant_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/20_examen_de_la_refraction_chez_l_enfant.pdf'); return false;">En savoir plus</a></p>
+
+</article>
+
+<article>
+    <h2>Injection intra-vitréenne (accord)</h2>
+    <p id="injection_vitreenne_fiche_info" style="display:none;">L'injection intra-vitréenne est une procédure consistant à administrer des médicaments directement à l'intérieur de l'œil pour traiter certaines pathologies oculaires. L'intervention est réalisée sous anesthésie locale et implique l'insertion d'une aiguille fine à travers la sclère de l'œil pour délivrer le médicament dans le vitré. Après l'injection, des soins post-opératoires sont effectués, et des effets secondaires temporaires tels que des taches dans le champ visuel peuvent survenir. Bien que les complications soient rares, elles peuvent inclure des infections, une élévation de la pression intra-oculaire, des lésions du cristallin, des hémorragies intra-vitréennes ou des décollements de rétine. Avant de donner son accord pour l'intervention, le patient est informé des risques et des bénéfices potentiels, et il lui est demandé de remplir un formulaire de consentement éclairé.</p>
+        <p id="injection_vitreenne_fiche_info_link"><a href="#" onclick="toggleText('injection_vitreenne_fiche_info', 'injection_vitreenne_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/65_Injection_intravitreenne_7sept14.pdf'); return false;">En savoir plus</a></p>
+</article>
+
+<article>
+    <h2>Iridotomie, iridoplastie</h2>
+    <p id="iridotomie_iridoplastie_fiche_info" style="display:none;">Pour traiter des anomalies ou des troubles visuels causés par des problèmes de l'iris et de l’angle irido-cornéen, votre ophtalmologiste vous propose une iridotomie ou une iridoplastie au laser. Ces procédures visent à créer une ouverture dans l'iris ou à modifier sa forme pour faciliter la circulation de l’humeur aqueuse et éviter une augmentation de la pression intraoculaire. Réalisée en ambulatoire, sous anesthésie locale, la procédure est généralement bien tolérée. Les soins postopératoires sont simples, et la plupart des patients ne ressentent que des inconforts temporaires. Les complications sévères sont rares, mais une surveillance postopératoire est essentielle. Avant l'intervention, le consentement éclairé du patient est requis.</p>
+        <p id="iridotomie_iridoplastie_fiche_info_link"><a href="#" onclick="toggleText('iridotomie_iridoplastie_fiche_info', 'iridotomie_iridoplastie_fiche_info_link', 'https://www.sfo-online.fr/patients/fiches-dinformations-patients'); return false;">En savoir plus</a></p>
+</article>
+
+<article>
+    <h2>Opération du glauque chronique-chirurgie filtrante</h2>
+    <p id="operation_glauque_fiche_info" style="display:none;">Pour le traitement du glaucome chronique menaçant la vision, la chirurgie filtrante est une option envisagée. Cette intervention vise à abaisser la pression intraoculaire en créant une sortie pour l'humeur aqueuse de l'œil. Elle peut être réalisée sous anesthésie locale ou générale et comporte des risques, notamment des complications oculaires sévères, bien que rares. La récupération postopératoire implique des soins locaux et des visites de suivi régulières. Les complications peuvent inclure des hémorragies, des infections et une baisse de vision. Avant l'opération, le patient doit donner son consentement éclairé et être informé des risques et des coûts associés.</p>
+<p id="operation_glauque_fiche_info_link"><a href="#" onclick="toggleText('operation_glauque_fiche_info', 'operation_glauque_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/3_Chirurgie_filtrante.pdf'); return false;">En savoir plus</a></p>
+
+</article>
+
+<article>
+    <h2>Opération du pterygion</h2>
+        <p id="operation_pterygion_fiche_info" style="display:none;">Si vous êtes affecté par un ptérygion, une excroissance bénigne de la conjonctive de l'œil pouvant causer des gênes et altérer la vision, votre ophtalmologiste peut recommander une opération pour le retirer. L'intervention consiste en l'excision de la lésion sans ouvrir le globe oculaire, éventuellement suivie d'une réparation conjonctivale ou d'une greffe de tissu. Généralement réalisée sous anesthésie locale ou générale en ambulatoire, l'opération peut entraîner des rougeurs temporaires et nécessite des soins postopératoires simples. Les complications graves sont rares, mais une récidive du ptérygion peut se produire. Avant l'intervention, le consentement éclairé du patient est requis.</p>
+<p id="operation_pterygion_fiche_info_link"><a href="#" onclick="toggleText('operation_pterygion_fiche_info', 'operation_pterygion_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/08_Operation_du_pterygion.pdf'); return false;">En savoir plus</a></p>
+
+</article>
+
+<article>
+    <h2>Traitement de la rétine par laser</h2>
+      <p id="traitement_retine_laser_fiche_info" style="display:none;">Si vous souffrez d'une affection de la rétine susceptible de causer une baisse de vision, votre ophtalmologiste peut vous recommander un traitement par photocoagulation au laser. Cette intervention vise à prévenir une détérioration supplémentaire de la vision en créant des cicatrices ou en détruisant des tissus anormaux de la rétine. Les affections traitées incluent les déchirures ou trous de la rétine, la rétinopathie diabétique et la dégénérescence maculaire liée à l'âge. Le traitement est généralement réalisé en externe, sous anesthésie locale, et ne dure pas plus de 15 à 20 minutes par séance. Les effets indésirables sont généralement mineurs et comprennent des sensations d'éblouissement et des maux de tête temporaires. Les complications graves sont rares, mais peuvent inclure des altérations du champ visuel et une baisse d'acuité visuelle chez les diabétiques. Il est important de discuter des risques et des avantages avec votre ophtalmologiste avant de donner votre consentement pour l'intervention.</p>
+<p id="traitement_retine_laser_fiche_info_link"><a href="#" onclick="toggleText('traitement_retine_laser_fiche_info', 'traitement_retine_laser_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/17_Traitement_de_la_retine_par_laser.pdf'); return false;">En savoir plus</a></p>
+
+</article>
+
+<article>
+    <h2>Traitement du glauque chronique à angle ouvert par laser</h2>
+    <p id="traitement_glauque_laser_fiche_info" style="display:none;">Pour le traitement du glaucome chronique à angle ouvert, une option est la trabéculoplastie au laser. Cette intervention vise à abaisser la pression intraoculaire en rendant le trabéculum plus perméable pour l'évacuation de l'humeur aqueuse. Elle peut être réalisée en ambulatoire, sous anesthésie locale, et est généralement bien tolérée. Les résultats varient d'un patient à l'autre, mais dans la plupart des cas, une réduction de la pression intraoculaire est observée. Les complications sont rares et peuvent inclure une réaction inflammatoire ou une élévation temporaire de la pression oculaire. La surveillance postopératoire est essentielle, et le traitement ne vise pas à améliorer la vision, mais à ralentir l'évolution du glaucome. Avant l'intervention, le consentement éclairé du patient est requis.</p>
+<p id="traitement_glauque_laser_fiche_info_link"><a href="#" onclick="toggleText('traitement_glauque_laser_fiche_info', 'traitement_glauque_laser_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/04-Trabeculoplastie.pdf'); return false;">En savoir plus</a></p>
+</article>
+
+<article>
+    <h2>Traitement d'une cataracte secondaire par laser</h2>
+        <p id="traitement_cataracte_laser_fiche_info" style="display:none;">Le traitement recommandé pour la cataracte secondaire est une capsulotomie au laser, une procédure non invasive qui vise à ouvrir la capsule opacifiée. Cela permet de restaurer la clarté visuelle en rétablissant la transmission de la lumière à travers le cristallin.</p>
+<p id="traitement_cataracte_laser_fiche_info_link"><a href="#" onclick="toggleText('traitement_cataracte_laser_fiche_info', 'traitement_cataracte_laser_fiche_info_link', 'https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/02_Capsulotomie_Yag.pdf'); return false;">En savoir plus</a></p>
+
+</article>
+</main>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
+<script>
+    function toggleText(id, linkId, newLink) {
+        var element = document.getElementById(id);
+        var linkElement = document.getElementById(linkId);
+
+        if (element.style.display === "none") {
+            element.style.display = "block";
+            linkElement.innerHTML = '<a href="' + newLink + '" target="_blank">Fiches d\'informations patients - Société Française d\'Ophtalmologie</a>';
+        } else {
+            element.style.display = "none";
+            linkElement.innerHTML = '<a href="#" onclick="toggleText(\'' + id + '\', \'' + linkId + '\', \'' + newLink + '\'); return false;">En savoir plus</a>';
+        }
+    }
+</script>
+</body>
+</html>
