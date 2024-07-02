@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>- Ophtao -</title>
+    <title>Consultation Médicale - Ophtao</title>
     <link rel="icon" href="image.ico" type="image/x-icon">
     <link rel="shortcut icon" href="image.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
@@ -53,58 +53,108 @@
 
         .section {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            height: 90vh; /* Hauteur de la section ajustée à 90% de la hauteur de l'écran */
+            background-color: #fff; /* Couleur de fond de la section */
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .content {
-            text-align: left; /* Alignement du texte à gauche */
-            color: #ffffff;
-            background-color: rgba(0, 0, 0, 0);
+            flex: 1;
             padding: 20px;
-            border-radius: 10px;
-            position: absolute;
-            top: 50%; /* Position verticale au centre */
-            left: 61%; /* Position horizontale au centre */
-            transform: translate(-50%, -50%); /* Centrage précis */
-            max-width: 80%; /* Largeur maximale du contenu */
+            box-sizing: border-box;
+            text-align: center;
         }
 
-        .content h2 {
-            margin: 0;
-            font-size: 8em; /* Taille de police agrandie */
+        .content p {
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            text-align: center;
         }
 
-        /* Suppression du bouton En savoir plus */
+        .image {
+            flex: 0 0 50%; /* Taille de la colonne d'image (50% pour la moitié de l'écran) */
+            max-width: 50%; /* Limite la largeur de l'image à 50% de l'écran */
+            text-align: center; /* Centre l'image horizontalement */
+            margin-top: 20vh; /* Marge en haut pour descendre l'image de quelques centimètres */
+        }
 
-        #megret {
-            background-image: url('myopie.jpg'); /* Modifier le nom de l'image ici */
-            background-size: cover;
-            background-position: center;
-            position: relative; /* Ajout d'une position relative pour gérer les positions absolues à l'intérieur */
+        .image img {
+            max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+            height: auto; /* Permet à l'image de conserver son ratio */
+            display: inline-block; /* Assure que l'image se comporte comme un bloc en ligne */
+            vertical-align: middle; /* Centre l'image verticalement */
+            border-radius: 10px; /* Bordure arrondie pour l'image */
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 5vh; /* Marge en haut pour les boutons */
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .btn-phone {
+            background-color: #45a049; /* Vert pour le bouton téléphone */
+        }
+
+        .btn-phone:hover {
+            background-color: #3d8b40;
+        }
+
+        .btn-appointment {
+            background-color: #45a049; /* Vert pour le bouton rendez-vous */
+        }
+
+        .btn-appointment:hover {
+            background-color: #3d8b40;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>- Ophtao -</h1>
+        <h1>- Myopie -</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Page d'accueil</a></li> <!-- Modifier le lien si nécessaire -->
+                <li><a href="index.html">Page d'accueil</a></li> <!-- Lien vers la page d'accueil -->
             </ul>
         </nav>
     </header>
 
-    <div id="megret" class="section">
+    <div class="section">
+        <div class="image">
+            <img src="myopie_correction.png" alt="Consultation Médicale" style="width: 702px; height: 702px;">
+        </div>
         <div class="content">
-            <h2>Myopie</h2>
-            <p>La myopie est un trouble de la réfraction qui entraîne une vision floue de loin mais nette de près. Plusieurs moyens de correction de la myopie sont à notre disposition : lunettes, lentilles, chirurgie réfractive.</p>
-            <p></p>
+            <p>
+                Symptômes : difficulté à voir de loin, vision floue de loin. 
+            </p>
+            <p>
+                Correction : lunettes, lentilles de contact, chirurgie réfractive.
+            </p>
+            <div class="btn-container">
+                <a href="tel:0139139191" class="btn btn-phone">01 39 13 91 91</a>
+                <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking" class="btn btn-appointment">Prendre rendez-vous</a>
+            </div>
         </div>
     </div>
 

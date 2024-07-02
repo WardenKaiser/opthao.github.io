@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>- Ophtao -</title>
+    <title>Consultation Médicale - Ophtao</title>
     <link rel="icon" href="image.ico" type="image/x-icon">
     <link rel="shortcut icon" href="image.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
@@ -55,7 +55,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 100vh;
+            height: 90vh; /* Hauteur de la section ajustée à 90% de la hauteur de l'écran */
             background-color: #fff; /* Couleur de fond de la section */
             padding: 20px;
             box-sizing: border-box;
@@ -79,6 +79,7 @@
             flex: 0 0 50%; /* Taille de la colonne d'image (50% pour la moitié de l'écran) */
             max-width: 50%; /* Limite la largeur de l'image à 50% de l'écran */
             text-align: center; /* Centre l'image horizontalement */
+            margin-top: 20vh; /* Marge en haut pour descendre l'image de quelques centimètres */
         }
 
         .image img {
@@ -87,6 +88,11 @@
             display: inline-block; /* Assure que l'image se comporte comme un bloc en ligne */
             vertical-align: middle; /* Centre l'image verticalement */
             border-radius: 10px; /* Bordure arrondie pour l'image */
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 5vh; /* Marge en haut pour les boutons */
         }
 
         .btn {
@@ -98,7 +104,7 @@
             text-align: center;
             transition: background-color 0.3s ease, transform 0.3s ease;
             display: inline-block;
-            margin-top: 20px;
+            margin-right: 10px;
         }
 
         .btn:hover {
@@ -106,12 +112,27 @@
             transform: translateY(-2px);
         }
 
+        .btn-phone {
+            background-color: #45a049; /* Vert pour le bouton téléphone */
+        }
+
+        .btn-phone:hover {
+            background-color: #3d8b40;
+        }
+
+        .btn-appointment {
+            background-color: #45a049; /* Vert pour le bouton rendez-vous */
+        }
+
+        .btn-appointment:hover {
+            background-color: #3d8b40;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>- Dr. Olivier Megret -</h1>
+        <h1>- Dystrophies Héréditaires de la Rétine -</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Page d'accueil</a></li> <!-- Lien vers la page d'accueil -->
@@ -121,18 +142,16 @@
 
     <div class="section">
         <div class="image">
-            <img src="megret_equipe.png" alt="Photo du Docteur" style="width: 700px; height: 700px;">
+            <img src="dystrophie_pathologie.png" alt="Consultation Médicale" style="width: 702px; height: 702px;">
         </div>
         <div class="content">
             <p>
-                Cher visiteur,<br><br>
-                Bienvenue sur notre site ! Actuellement, cette section contient un texte d'exemple de 1200 caractères, prêt à être personnalisé selon vos besoins spécifiques. Nous sommes là pour vous aider à adapter ce contenu pour qu'il corresponde parfaitement à votre entreprise, projet ou site web.<br><br>
-                À l'avenir, vous pourrez remplacer ce texte par des détails pertinents sur vos produits, services ou informations d'entreprise. Que vous souhaitiez informer vos visiteurs, promouvoir des offres spéciales, ou simplement présenter votre équipe et votre expertise, nous sommes là pour vous accompagner dans ce processus.<br><br>
-                N'hésitez pas à nous contacter si vous avez des questions ou besoin d'assistance pour personnaliser davantage ce texte ou d'autres parties de votre site. Nous sommes disponibles pour vous aider à optimiser votre contenu afin qu'il reflète fidèlement votre identité et vos objectifs.<br><br>
-                Merci pour votre visite, et à très bientôt pour découvrir ensemble les nouvelles informations que vous ajouterez ici !
+                Les dystrophies héréditaires de la rétine sont des maladies génétiques qui affectent les photorécepteurs et les cellules de l'épithélium pigmentaire de la rétine. Cette altération cellulaire est responsable des manifestations cliniques observées en ophtalmologie. L'atteinte primaire se produit généralement au niveau des bâtonnets, suivie par une altération des cônes. Cela se traduit par une dystrophie rodéo-cone. Les symptômes cliniques incluent une diminution du champ visuel périphérique nocturne (héméralopie) et, avec la progression de la maladie, une diminution de la vision centrale accompagnée éventuellement de troubles de la vision des couleurs et de photophobie.
             </p>
-            <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking" class="btn">Prendre rendez-vous</a>
-            <a href="tel:0139139191" class="btn">01 39 13 91 91</a>
+            <div class="btn-container">
+                <a href="tel:0139139191" class="btn btn-phone">01 39 13 91 91</a>
+                <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking" class="btn btn-appointment">Prendre rendez-vous</a>
+            </div>
         </div>
     </div>
 
