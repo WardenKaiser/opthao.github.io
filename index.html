@@ -97,17 +97,18 @@
 
         /* Index */
         #index {
-            height: 900px;
-            width: 1920px;
+            height: 70vh; /* 100% de la hauteur de la fenêtre */
+            width: 100vw; /* 100% de la largeur de la fenêtre */
             background-image: none;
+            position: relative;
         }
 
         .title-index {
             position: absolute;
-            top: 30vh;
-            left: 10vh;
+            top: 20vh; /* Position relative à la hauteur de la fenêtre */
+            left: 5vw; /* Position relative à la largeur de la fenêtre */
             color: #003366;
-            font-size: 3em;
+            font-size: 5vh; /* Taille de police relative à la hauteur de la fenêtre */
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
             text-align: left;
@@ -115,49 +116,48 @@
 
         .text-index {
             position: absolute;
-            top: 35vh;
-            left: -5vh;
-            width: 977px;
-            height: 280px;
-            font-size: 52.6px;
+            top: 35vh; /* Position relative à la hauteur de la fenêtre */
+            left: 10vw; /* Position relative à la largeur de la fenêtre */
+            width: 50vw; /* Largeur relative à la largeur de la fenêtre */
+            font-size: 4vh; /* Taille de police relative à la hauteur de la fenêtre */
             line-height: 1.5;
             color: #000000;
             font-family: 'Prosto', sans-serif;
-            text-align: center;
+            text-align: left; /* Alignement à gauche */
         }
 
         .img-index {
             position: absolute;
-            top: 50%;
-            left: 70%;
-            transform: translate(-50%, -50%);
-            width: 1102px;
-            height: 795px;
+            top: 20vh; /* Position relative à la hauteur de la fenêtre */
+            right: 10vw; /* Position relative à la largeur de la fenêtre */
+            width: 30vw; /* Largeur relative à la largeur de la fenêtre */
+            height: auto; /* Hauteur automatique pour maintenir les proportions */
         }
 
-        /* Bienvenue */
+                /* Bienvenue */
         #bienvenue {
-            height: 500px;
-            width: 1920px;
+            height: 50vh; /* 100% de la hauteur de la fenêtre */
+            width: 100vw; /* 100% de la largeur de la fenêtre */
             background-image: none;
+            position: relative;
         }
 
         .title-bienvenue {
             position: absolute;
-            top: -5vh;
-            left: 10vh;
-            font-size: 50px;
+            top: 4vh; /* Position relative à la hauteur de la fenêtre */
+            left: 5vw; /* Position relative à la largeur de la fenêtre */
+            font-size: 5vh; /* Taille de police relative à la hauteur de la fenêtre */
+            font-weight: bold;
             color: #003366;
             font-family: 'Open Sans', sans-serif;
         }
 
         .text-bienvenue {
             position: absolute;
-            top: 10vh;
-            left: 70vh;
-            width: 1059px;
-            height: 617px;
-            font-size: 30px;
+            top: 15vh; /* Position relative à la hauteur de la fenêtre */
+            left: 30vw; /* Position relative à la largeur de la fenêtre */
+            width: 50vw; /* Largeur relative à la largeur de la fenêtre */
+            font-size: 3vh; /* Taille de police relative à la hauteur de la fenêtre */
             color: black;
             font-family: 'Prosto', sans-serif;
             text-align: justify;
@@ -165,12 +165,16 @@
 
         .img-bienvenue {
             position: absolute;
-            top: 10vh;
-            left: 10vh;
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 20px;
+            top: 15vh; /* Position relative à la hauteur de la fenêtre */
+            left: 5vw; /* Position relative à la largeur de la fenêtre */
+            width: 20vw; /* Largeur relative à la largeur de la fenêtre */
+            height: auto; /* Hauteur automatique pour maintenir les proportions */
+            margin-right: 2vw; /* Marge droite pour espacement */
+            margin-bottom: 2vh; /* Marge inférieure pour espacement */
         }
+
+
+
             /* Cabinet */
             #cabinet {
                 height: 100vh; /* 100% de la hauteur de la fenêtre */
@@ -184,6 +188,7 @@
                 font-family: 'Open Sans', sans-serif;
                 color: #003366;
                 position: absolute;
+                font-weight: bold;
                 top: 15vh; /* Position relative à la hauteur de la fenêtre */
                 left: 5vw; /* Position relative à la largeur de la fenêtre */
             }
@@ -209,7 +214,7 @@
             }
 
             .text-hours {
-                top: 60vh; /* Position relative à la hauteur de la fenêtre */
+                top: 65vh; /* Position relative à la hauteur de la fenêtre */
                 right: 8vw; /* Position relative à la largeur de la fenêtre */
             }
 
@@ -253,22 +258,22 @@
             }
 
             .btn-tel {
-                bottom: 39vh; /* Position relative à la hauteur de la fenêtre */
-                left: 5vw; /* Position relative à la largeur de la fenêtre */
-            }
-
-            .btn-mail {
                 bottom: 45vh; /* Position relative à la hauteur de la fenêtre */
                 left: 5vw; /* Position relative à la largeur de la fenêtre */
             }
 
+            .btn-mail {
+                bottom: 50vh; /* Position relative à la hauteur de la fenêtre */
+                left: 5vw; /* Position relative à la largeur de la fenêtre */
+            }
+
             .btn-rdv {
-                bottom: 33vh; /* Position relative à la hauteur de la fenêtre */
+                bottom: 40vh; /* Position relative à la hauteur de la fenêtre */
                 left: 5vw; /* Position relative à la largeur de la fenêtre */
             }
 
             .btn-maps {
-                bottom: 60vh; /* Position relative à la hauteur de la fenêtre */
+                bottom: 64vh; /* Position relative à la hauteur de la fenêtre */
                 left: 5vw; /* Position relative à la largeur de la fenêtre */
             }
 
@@ -285,6 +290,7 @@
             font-family: 'Open Sans', sans-serif;
             color: #003366;
             position: absolute;
+            font-weight: bold;
             /* Position modifiable */
             top: 15vh;
             left: 5vw;
@@ -361,6 +367,7 @@
             font-size: 5vh; /* Taille de police relative à la hauteur de la fenêtre */
             font-family: 'Open Sans', sans-serif;
             color: #003366;
+            font-weight: bold;
             position: absolute;
             top: 15vh; /* Position relative à la hauteur de la fenêtre */
             left: 5vw; /* Position relative à la largeur de la fenêtre */
@@ -478,6 +485,7 @@
             font-size: 5vh; /* Taille de police relative à la hauteur de la fenêtre */
             font-family: 'Open Sans', sans-serif;
             color: #003366;
+            font-weight: bold;
             position: absolute;
             top: 15vh; /* Position relative à la hauteur de la fenêtre */
             left: 5vw; /* Position relative à la largeur de la fenêtre */
@@ -585,7 +593,7 @@
 
         /* Correction des défauts visuels */
         #correction {
-            height: 100vh; /* 100% de la hauteur de la fenêtre */
+            height: 50vh; /* 100% de la hauteur de la fenêtre */
             width: 100vw; /* 100% de la largeur de la fenêtre */
             background-image: none;
             position: relative;
@@ -596,6 +604,7 @@
             font-size: 5vh; /* Taille de police relative à la hauteur de la fenêtre */
             font-family: 'Open Sans', sans-serif;
             color: #003366;
+            font-weight: bold;
             position: absolute;
             top: 15vh; /* Position relative à la hauteur de la fenêtre */
             left: 5vw; /* Position relative à la largeur de la fenêtre */
@@ -688,6 +697,7 @@
             font-family: 'Open Sans', sans-serif;
             color: #003366;
             position: absolute;
+            font-weight: bold;
             top: 15vh; /* Position relative à la hauteur de la fenêtre */
             left: 5vw; /* Position relative à la largeur de la fenêtre */
         }
@@ -805,9 +815,9 @@
         <h2 class="title-index">Cabinet conventionné secteur 1</h2>
         <!-- Texte -->
         <p class="text-index">
-            Cabinet ophtalmologique<br>
-            - Ophtao -<br>
-            Situé à Houilles
+            Cabinet d'ophtalmologie, à Houilles <br>
+             - Ophtao -<br>
+            Dr Mégret et associés
         </p>
     </div>
 </div>
@@ -823,7 +833,7 @@
             <!-- Titre de la section "Bienvenue" -->
             <p class="text-bienvenue">
                 <!-- Paragraphe de texte pour accueillir les visiteurs -->
-                Notre environnement virtuel a été conçu pour répondre à vos questions à propos de votre santé visuelle. Nous présentons ici notre équipe, formée de praticiens expérimentés, et les modalités de contact. Vous trouverez des informations détaillées sur nos services et notre équipe spécialisée en ophtalmologie, ainsi que des ressources pour comprendre votre santé oculaire. N'hésitez pas à explorer nos sections, à utiliser les fonctionnalités de ce site et à nous contacter si besoin.<br><br>
+                Cet environnement virtuel a été conçu pour répondre à vos questions à propos de votre santé visuelle. Nous présentons ici notre équipe, et les modalités de contact. Vous trouverez des informations détaillées sur nos services et notre équipe spécialisée en ophtalmologie, ainsi que des ressources pour comprendre votre santé oculaire. N'hésitez pas à explorer nos sections, à utiliser les fonctionnalités de ce site et à nous contacter si besoin. <br><br>
                 Cordialement,<br>
                 Dr. Olivier MEGRET
             </p>
@@ -923,7 +933,7 @@
             <!-- Section "Consultations" -->
         <div id="consultation" class="section">
             <div class="content">
-                <h1 class="title-consultation">Consultation Médicale</h1>
+                <h1 class="title-consultation">Consultation Ophtalmologique</h1>
                 
                 <!-- Images des différentes options de consultation -->
                 <a href="consultation_medicale.html"><img src="consultation_medicale.png" class="img-consultation-medicale"></a>
@@ -934,7 +944,7 @@
                 <a href="urgences.html"><img src="urgences.png" class="img-urgences"></a>
                 
                 <!-- Liens textuels vers les différentes options de consultation -->
-                <a href="consultation_medicale.html" class="btn btn-consultation-medicale">Consultation Médicale</a>
+                <a href="consultation_medicale.html" class="btn btn-consultation-medicale">Consultation Ophtalmologique</a>
                 <a href="pediatrie.html" class="btn btn-pediatrie_consultation">Pédiatrie</a>
                 <a href="rendez_vous.html" class="btn btn-rendez-vous">Rendez-vous Médical</a>
                 <a href="diabetique.html" class="btn btn-diabetique">Diabétique</a>
